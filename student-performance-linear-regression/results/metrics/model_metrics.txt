@@ -1,0 +1,6 @@
+Student Performance Prediction - Model Evaluation Metrics
+============================================================
+Mean Absolute Error (MAE) : 5.6561
+Mean Squared Error (MSE)  : 47.1436
+Root Mean Squared Error   : 6.8661
+R2 Score                  : 0.6206

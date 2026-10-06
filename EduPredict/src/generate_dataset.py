@@ -4,6 +4,7 @@ The relationship between features and final marks is positive but noisy,
 so the dataset does not produce a perfect correlation.
 """
 
+import os
 import numpy as np
 import pandas as pd
 
@@ -41,8 +42,13 @@ df = pd.DataFrame(
     }
 )
 
+import os
 df.to_csv(
-    r"C:\Users\harsh\OneDrive\Desktop\STUDENT_ML\student-performance-linear-regression\dataset\student_performance.csv",
+    os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        "dataset",
+        "student_performance.csv",
+    ),
     index=False,
 )
 print(df.head())

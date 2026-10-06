@@ -20,7 +20,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # ---------------------------------------------------------------- paths
-BASE = r"C:\Users\harsh\OneDrive\Desktop\STUDENT_ML\student-performance-linear-regression"
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "dataset", "student_performance.csv")
 FIG = os.path.join(BASE, "results", "figures")
 METRICS = os.path.join(BASE, "results", "metrics")
